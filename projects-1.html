@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Work Portfolio - MyFilmProduction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles\styles\main.css">
+    <link rel="stylesheet" href="styles\styles\animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MyFilm<span>Production</span></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Main Home</a>
+                        <a href="home-alt.html">Cinematic Home</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Services</a>
+                    <div class="dropdown-content">
+                        <a href="services-1.html">Film Production</a>
+                        <a href="services-2.html">Post-Production</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="projects-1.html" class="active">Commercial Work</a>
+                        <a href="projects-2.html">Short Films</a>
+                        <a href="projects-3.html">Documentaries</a>
+                        <a href="projects-4.html">Music Videos</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Shop</a>
+                    <div class="dropdown-content">
+                        <a href="shop-1.html">Cameras</a>
+                        <a href="shop-2.html">Lighting</a>
+                        <a href="shop-3.html">Audio Equipment</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="team.html" class="nav-link">Team</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="page-title">Commercial Work</h1>
+                <p class="page-subtitle">Brand storytelling and commercial content that drives results and engages audiences</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="brand">Brand Stories</button>
+                <button class="filter-btn" data-filter="product">Product Campaigns</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-showcase">
+        <div class="container">
+            <div class="portfolio-grid-large">
+                <div class="portfolio-item" data-category="brand" data-animate="fadeIn">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Brand Story Campaign">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>TechStart Brand Story</h3>
+                                <p>A compelling narrative showcasing the journey of a tech startup</p>
+                                <div class="project-tags">
+                                    <span class="tag">Brand Story</span>
+                                    <span class="tag">Corporate</span>
+                                </div>
+                                <a href="project-detail-1.html" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="product" data-animate="fadeIn" data-delay="100">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Product Campaign">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Luxury Watch Campaign</h3>
+                                <p>High-end product campaign for premium timepiece collection</p>
+                                <div class="project-tags">
+                                    <span class="tag">Product</span>
+                                    <span class="tag">Luxury</span>
+                                </div>
+                                <a href="project-detail-2.html" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="social" data-animate="fadeIn" data-delay="200">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Social Media Campaign">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Fitness App Launch</h3>
+                                <p>Dynamic social media campaign for fitness application</p>
+                                <div class="project-tags">
+                                    <span class="tag">Social</span>
+                                    <span class="tag">App Launch</span>
+                                </div>
+                                <a href="project-detail-1.html" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="corporate" data-animate="fadeIn" data-delay="300">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Corporate Video">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Corporate Training Series</h3>
+                                <p>Professional training videos for corporate team development</p>
+                                <div class="project-tags">
+                                    <span class="tag">Corporate</span>
+                                    <span class="tag">Training</span>
+                                </div>
+                                <a href="project-detail-2.html" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="product" data-animate="fadeIn" data-delay="400">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Food Product Campaign">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Organic Food Brand</h3>
+                                <p>Fresh and natural product campaign for organic food line</p>
+                                <div class="project-tags">
+                                    <span class="tag">Product</span>
+                                    <span class="tag">Food</span>
+                                </div>
+                                <a href="project-detail-1.html" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="social" data-animate="fadeIn" data-delay="500">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1556742173-cb8707f46178?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Fashion Campaign">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Fashion Brand Campaign</h3>
+                                <p>Trendy social media content for fashion brand</p>
+                                <div class="project-tags">
+                                    <span class="tag">Social</span>
+                                    <span class="tag">Fashion</span>
+                                </div>
+                                <a href="project-detail-2.html" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Create Your Brand Story?</h2>
+                <p>Let's work together to create compelling commercial content that drives results</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                    <a href="services-1.html" class="btn btn-outline">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MyFilm<span>Production</span></h3>
+                    <p>Creating cinematic excellence through professional film production services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-2.08 0-3.75-1.671-3.75-3.75s1.671-3.75 3.75-3.75 3.75 1.671 3.75 3.75-1.67 3.75-3.75 3.75zm7.121-5.749c-1.287 0-2.32 1.033-2.32 2.32s1.033 2.32 2.32 2.32 2.32-1.033 2.32-2.32-1.033-2.32-2.32-2.32z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services-1.html">Film Production</a></li>
+                        <li><a href="services-2.html">Post-Production</a></li>
+                        <li><a href="shop-1.html">Equipment Rental</a></li>
+                        <li><a href="contact.html">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="projects-1.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2c45424a436c41554a4540415c5e4348594f58454342024f4341">[email&#160;protected]</a></p>
+                    <p>📞 +1 (555) 123-4567</p>
+                    <p>📍 123 Film Street, Hollywood, CA 90028</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MyFilmProduction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js"></script>
+    <script src="js\js\animations.js"></script>
+
+    <style>
+        .portfolio-hero {
+            padding: 120px 0 var(--space-xxxl);
+            background: linear-gradient(135deg, var(--bg-page) 0%, #1a1d2e 100%);
+            text-align: center;
+        }
+        
+        .portfolio-filter {
+            padding: var(--space-lg) 0;
+            background: var(--bg-surface);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-sm);
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 12px 24px;
+            background: transparent;
+            border: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: var(--font-heading);
+            font-weight: 500;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-500);
+            border-color: var(--primary-500);
+            color: white;
+        }
+        
+        .portfolio-showcase {
+            padding: var(--space-xxxl) 0;
+        }
+        
+        .portfolio-grid-large {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: var(--space-lg);
+        }
+        
+        .portfolio-item {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-8px);
+        }
+        
+        .portfolio-image {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+        
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .portfolio-item:hover .portfolio-image img {
+            transform: scale(1.1);
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(33, 107, 255, 0.9), rgba(255, 138, 0, 0.9));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        .portfolio-content {
+            text-align: center;
+            color: white;
+            padding: var(--space-lg);
+        }
+        
+        .portfolio-content h3 {
+            font-size: 24px;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .portfolio-content p {
+            margin-bottom: var(--space-md);
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .project-tags {
+            display: flex;
+            gap: var(--space-xs);
+            justify-content: center;
+            margin-bottom: var(--space-md);
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        /* Filter functionality */
+        .portfolio-item.hidden {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .filter-buttons {
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding: 0 var(--space-md);
+            }
+            
+            .portfolio-grid-large {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script>
+        // Portfolio filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    portfolioItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+                        
+                        if (filter === 'all' || category === filter) {
+                            item.classList.remove('hidden');
+                            item.style.display = 'block';
+                        } else {
+                            item.classList.add('hidden');
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

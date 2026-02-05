@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Films Portfolio - MyFilmProduction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles\styles\main.css">
+    <link rel="stylesheet" href="styles\styles\animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MyFilm<span>Production</span></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Main Home</a>
+                        <a href="home-alt.html">Cinematic Home</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Services</a>
+                    <div class="dropdown-content">
+                        <a href="services-1.html">Film Production</a>
+                        <a href="services-2.html">Post-Production</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="projects-1.html">Commercial Work</a>
+                        <a href="projects-2.html" class="active">Short Films</a>
+                        <a href="projects-3.html">Documentaries</a>
+                        <a href="projects-4.html">Music Videos</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Shop</a>
+                    <div class="dropdown-content">
+                        <a href="shop-1.html">Cameras</a>
+                        <a href="shop-2.html">Lighting</a>
+                        <a href="shop-3.html">Audio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="team.html" class="nav-link">Team</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in-up">Short Films</h1>
+                <p class="hero-subtitle fade-in-up delay-1">Powerful storytelling in compact form - exploring human emotions, complex themes, and artistic vision</p>
+                <div class="hero-stats fade-in-up delay-2">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Short Films Produced</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Festival Awards</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Festival Selections</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Films</button>
+                <button class="filter-btn" data-filter="drama">Drama</button>
+                <button class="filter-btn" data-filter="thriller">Thriller</button>
+                <button class="filter-btn" data-filter="comedy">Comedy</button>
+                <button class="filter-btn" data-filter="experimental">Experimental</button>
+                <button class="filter-btn" data-filter="documentary">Documentary</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+                
+                <div class="project-card drama fade-in-up" data-category="drama">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-2.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">The Last Letter</h3>
+                        <p class="project-description">A touching drama about a woman's final letter to her late husband, revealing decades of hidden love and regret</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Drama</span>
+                            <span class="project-duration">12 min</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Short Film - LA Film Festival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card thriller fade-in-up delay-1" data-category="thriller">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-1.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Midnight Encounter</h3>
+                        <p class="project-description">A psychological thriller following two strangers who meet at a late-night diner, each hiding dangerous secrets</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Thriller</span>
+                            <span class="project-duration">8 min</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Thriller - NYC Film Festival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card comedy fade-in-up delay-2" data-category="comedy">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-2.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">The Job Interview</h3>
+                        <p class="project-description">A hilarious take on modern job interviews, where the candidate discovers more about the company than expected</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Comedy</span>
+                            <span class="project-duration">5 min</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Audience Choice - Comedy Film Festival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card experimental fade-in-up delay-3" data-category="experimental">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-1.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Dreams in Sequence</h3>
+                        <p class="project-description">An experimental piece exploring the fragmented nature of dreams through non-linear storytelling and surreal imagery</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Experimental</span>
+                            <span class="project-duration">15 min</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Experimental - Cannes Shorts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card documentary fade-in-up delay-4" data-category="documentary">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-2.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Voices of the Street</h3>
+                        <p class="project-description">A powerful documentary capturing the stories of homeless individuals in urban America, showing their dignity and humanity</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Documentary</span>
+                            <span class="project-duration">20 min</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Documentary - Social Impact Film Fest</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card drama fade-in-up delay-5" data-category="drama">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-1.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">The Reunion</h3>
+                        <p class="project-description">Two estranged siblings reunite after 20 years to settle their deceased mother's estate, uncovering family secrets</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Drama</span>
+                            <span class="project-duration">10 min</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Actor - Toronto Short Film Festival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card thriller fade-in-up delay-6" data-category="thriller">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-2.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">The Package</h3>
+                        <p class="project-description">A mysterious delivery driver discovers a dangerous conspiracy when he opens a package meant for someone else</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Thriller</span>
+                            <span class="project-duration">7 min</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Short - Austin Film Festival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card comedy fade-in-up delay-7" data-category="comedy">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-1.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">The Dating App</h3>
+                        <p class="project-description">A single person navigates the chaos of modern dating through a series of hilariously bad virtual dates</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Comedy</span>
+                            <span class="project-duration">6 min</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Comedy - LA Comedy Film Fest</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card drama fade-in-up delay-8" data-category="drama">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-2.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">The Artist's Struggle</h3>
+                        <p class="project-description">An aging painter confronts his fading creativity and the harsh reality of selling his life's work for survival</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Drama</span>
+                            <span class="project-duration">14 min</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Short - Venice Shorts</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Achievements</h2>
+                <p class="section-subtitle">Recognition and success in the competitive world of short film production</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card fade-in-up">
+                    <div class="stat-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 2H18C20.2091 2 22 3.79086 22 6V20C22 22.2091 20.2091 24 18 24H6C3.79086 24 2 22.2091 2 20V6C2 3.79086 3.79086 2 6 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 6L12 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 9L12 6L17 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Festival Selections</div>
+                </div>
+                
+                <div class="stat-card fade-in-up delay-1">
+                    <div class="stat-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 21H16L18 17H6L8 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 17H18L16 13H8L6 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 13H16L14 9H10L8 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Festival Awards</div>
+                </div>
+                
+                <div class="stat-card fade-in-up delay-2">
+                    <div class="stat-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Short Films Produced</div>
+                </div>
+                
+                <div class="stat-card fade-in-up delay-3">
+                    <div class="stat-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.57829 8.50903 2.99864 7.05 2.99864C5.59096 2.99864 4.19169 3.57829 3.16 4.61C2.1283 5.64169 1.54864 7.04097 1.54864 8.5C1.54864 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7564 11.2728 22.0329 10.6054C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39464C21.7564 5.72718 21.351 5.12084 20.84 4.61V4.61Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number">4.8/5</div>
+                    <div class="stat-label">Average Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Short Film Process</h2>
+                <p class="section-subtitle">From concept to screen, we follow a proven methodology for creating compelling short films</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step fade-in-up">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Story Development</h3>
+                        <p>Collaborative story workshops, script development, and character creation to establish a compelling narrative foundation</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in-up delay-1">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Pre-Production</h3>
+                        <p>Casting, location scouting, shot planning, and logistics coordination to ensure smooth production execution</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in-up delay-2">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Production</h3>
+                        <p>Efficient shooting schedule with multiple camera setups and professional crew to capture all required footage</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in-up delay-3">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Post-Production</h3>
+                        <p>Expert editing, color grading, sound design, and music to create a polished final product</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in-up delay-4">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Festival Strategy</h3>
+                        <p>Strategic festival submissions, marketing materials, and promotional campaigns to maximize exposure</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in-up delay-5">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3>Distribution</h3>
+                        <p>Online platform releases, media outreach, and building long-term audience for continued success</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Create Your Short Film?</h2>
+                <p class="cta-subtitle">Let's bring your vision to life with professional short film production services</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                    <a href="services-1.html" class="btn btn-secondary">View Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>MyFilm<span>Production</span></h3>
+                    </div>
+                    <p>Creating cinematic experiences through professional film production and post-production services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services-1.html">Film Production</a></li>
+                        <li><a href="services-2.html">Post-Production</a></li>
+                        <li><a href="projects-1.html">Commercial Work</a></li>
+                        <li><a href="projects-2.html">Short Films</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📧 info@myfilmproduction.com</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>📍 123 Film Street, Los Angeles, CA</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MyFilmProduction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js\js\main.js"></script>
+    <script src="js\js\animations.js"></script>
+    <script>
+        // Project filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter projects
+                    projectCards.forEach(card => {
+                        if (filter === 'all' || card.classList.contains(filter)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

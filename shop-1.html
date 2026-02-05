@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Equipment - MyFilmProduction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles\styles\main.css">
+    <link rel="stylesheet" href="styles\styles\animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MyFilm<span>Production</span></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Main Home</a>
+                        <a href="home-alt.html">Cinematic Home</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Services</a>
+                    <div class="dropdown-content">
+                        <a href="services-1.html">Film Production</a>
+                        <a href="services-2.html">Post-Production</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="projects-1.html">Commercial Work</a>
+                        <a href="projects-2.html">Short Films</a>
+                        <a href="projects-3.html">Documentaries</a>
+                        <a href="projects-4.html">Music Videos</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Shop</a>
+                    <div class="dropdown-content">
+                        <a href="shop-1.html" class="active">Cameras</a>
+                        <a href="shop-2.html">Lighting</a>
+                        <a href="shop-3.html">Audio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="team.html" class="nav-link">Team</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Hero Section -->
+    <section class="shop-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in-up">Camera Equipment</h1>
+                <p class="hero-subtitle fade-in-up delay-1">Professional cinema cameras, lenses, and accessories for your next production</p>
+                <div class="shop-stats fade-in-up delay-2">
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Products Available</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5★</span>
+                        <span class="stat-label">Customer Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="shop-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category" class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="cameras">Cinema Cameras</option>
+                        <option value="lenses">Lenses</option>
+                        <option value="accessories">Accessories</option>
+                        <option value="support">Support Equipment</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Price Range:</label>
+                    <select id="price" class="filter-select">
+                        <option value="all">All Prices</option>
+                        <option value="budget">Under $1,000</option>
+                        <option value="mid">$1,000 - $5,000</option>
+                        <option value="high">$5,000 - $10,000</option>
+                        <option value="premium">Over $10,000</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="brand">Brand:</label>
+                    <select id="brand" class="filter-select">
+                        <option value="all">All Brands</option>
+                        <option value="red">RED</option>
+                        <option value="arri">ARRI</option>
+                        <option value="sony">Sony</option>
+                        <option value="canon">Canon</option>
+                        <option value="zeiss">Zeiss</option>
+                        <option value=" Cooke">Cooke Optics</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="shop-products">
+        <div class="container">
+            <div class="products-grid">
+                
+                <!-- Cinema Cameras -->
+                <div class="product-card fade-in-up" data-category="cameras" data-price="premium" data-brand="red">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>RED V-Raptor 8K</span>
+                        </div>
+                        <div class="product-badges">
+                            <span class="badge badge-new">New</span>
+                            <span class="badge badge-featured">Featured</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">RED V-Raptor 8K VV</h3>
+                        <p class="product-description">Industry-leading 8K cinema camera with 17+ stops of dynamic range and 300fps at 2K</p>
+                        <div class="product-features">
+                            <span class="feature-tag">8K VV</span>
+                            <span class="feature-tag">300fps</span>
+                            <span class="feature-tag">ProRes</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(4.9/5)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$79,500</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                <button class="btn btn-secondary btn-sm">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in-up delay-1" data-category="cameras" data-price="premium" data-brand="arri">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>ARRI ALEXA Mini LF</span>
+                        </div>
+                        <div class="product-badges">
+                            <span class="badge badge-pro">Pro</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">ARRI ALEXA Mini LF</h3>
+                        <p class="product-description">Compact large format cinema camera with exceptional image quality and color science</p>
+                        <div class="product-features">
+                            <span class="feature-tag">4.5K LF</span>
+                            <span class="feature-tag">ARRIRAW</span>
+                            <span class="feature-tag">4K/2K</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(4.8/5)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$64,000</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                <button class="btn btn-secondary btn-sm">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in-up delay-2" data-category="cameras" data-price="high" data-brand="sony">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>Sony FX6</span>
+                        </div>
+                        <div class="product-badges">
+                            <span class="badge badge-popular">Popular</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Sony FX6 Full-Frame Cinema Camera</h3>
+                        <p class="product-description">Versatile full-frame camera with dual base ISO and 4K 120p recording capability</p>
+                        <div class="product-features">
+                            <span class="feature-tag">Full Frame</span>
+                            <span class="feature-tag">4K 120p</span>
+                            <span class="feature-tag">Dual Base ISO</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-text">(4.7/5)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$5,998</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                <button class="btn btn-secondary btn-sm">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in-up delay-3" data-category="cameras" data-price="mid" data-brand="canon">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>Canon C70</span>
+                        </div>
+                        <div class="product-badges">
+                            <span class="badge badge-value">Best Value</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Canon C70 Cinema Camera</h3>
+                        <p class="product-description">Compact cinema camera with Super35 sensor and 4K 120p recording</p>
+                        <div class="product-features">
+                            <span class="feature-tag">Super35</span>
+                            <span class="feature-tag">4K 120p</span>
+                            <span class="feature-tag">Dual Pixel AF</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-text">(4.6/5)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$2,999</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                <button class="btn btn-secondary btn-sm">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lenses -->
+                <div class="product-card fade-in-up delay-4" data-category="lenses" data-price="high" data-brand="zeiss">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>Zeiss Master Primes</span>
+                        </div>
+                        <div class="product-badges">
+                            <span class="badge badge-premium">Premium</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Zeiss Master Prime 35mm T1.3</h3>
+                        <p class="product-description">Legendary cinema lens with exceptional sharpness and beautiful bokeh</p>
+                        <div class="product-features">
+                            <span class="feature-tag">T1.3</span>
+                            <span class="feature-tag">35mm</span>
+                            <span class="feature-tag">PL Mount</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(4.9/5)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$7,800</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                <button class="btn btn-secondary btn-sm">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in-up delay-5" data-category="lenses" data-price="mid" data-brand=" Cooke">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>Cooke S4/i</span>
+                        </div>
+                        <div class="product-badges">
+                            <span class="badge badge-featured">Featured</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Cooke S4/i 50mm T2.0</h3>
+                        <p class="product-description">Classic look lens with natural skin tones and vintage characteristics</p>
+                        <div class="product-features">
+                            <span class="feature-tag">T2.0</span>
+                            <span class="feature-tag">50mm</span>
+                            <span class="feature-tag">PL Mount</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(4.8/5)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$3,950</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                <button class="btn btn-secondary btn-sm">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accessories -->
+                <div class="product-card fade-in-up delay-6" data-category="accessories" data-price="budget" data-brand="sony">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>Sony VCT-SGPR2</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Sony VCT-SGPR2 Shoulder Support</h3>
+                        <p class="product-description">Professional shoulder mount support for extended handheld shooting</p>
+                        <div class="product-features">
+                            <span class="feature-tag">Shoulder Mount</span>
+                            <span class="feature-tag">Adjustable</span>
+                            <span class="feature-tag">Lightweight</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-text">(4.3/5)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$299</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                <button class="btn btn-secondary btn-sm">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in-up delay-7" data-category="accessories" data-price="mid" data-brand="arri">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>ARRI 15mm LWS</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">ARRI 15mm LWS Rod Support</h3>
+                        <p class="product-description">Lightweight support system for 15mm rod accessories and follow focus</p>
+                        <div class="product-features">
+                            <span class="feature-tag">15mm LWS</span>
+                            <span class="feature-tag">Aluminum</span>
+                            <span class="feature-tag">Adjustable</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(4.9/5)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$1,450</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                <button class="btn btn-secondary btn-sm">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support Equipment -->
+                <div class="product-card fade-in-up delay-8" data-category="support" data-price="mid" data-brand="arri">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>ARRI Trinity</span>
+                        </div>
+                        <div class="product-badges">
+                            <span class="badge badge-new">New</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">ARRI Trinity 2.0 Camera Stabilizer</h3>
+                        <p class="product-description">Advanced 3-axis hybrid stabilizer for smooth professional cinematography</p>
+                        <div class="product-features">
+                            <span class="feature-tag">3-Axis</span>
+                            <span class="feature-tag">Hybrid</span>
+                            <span class="feature-tag">Pro Stabilization</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">(4.8/5)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$2,500</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                <button class="btn btn-secondary btn-sm">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in-up delay-9" data-category="support" data-price="budget" data-brand="red">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>RED V-Raptor Case</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">RED V-Raptor Transport Case</h3>
+                        <p class="product-description">Custom hard case designed specifically for the RED V-Raptor camera system</p>
+                        <div class="product-features">
+                            <span class="feature-tag">Custom Fit</span>
+                            <span class="feature-tag">Waterproof</span>
+                            <span class="feature-tag">Padded</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-text">(4.4/5)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">$899</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                <button class="btn btn-secondary btn-sm">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Information -->
+    <section class="rental-info">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Rental Services</h2>
+                <p class="section-subtitle">Flexible rental options for all your production needs</p>
+            </div>
+            
+            <div class="rental-grid">
+                <div class="rental-option fade-in-up">
+                    <div class="rental-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Daily Rentals</h3>
+                    <p>Perfect for short-term projects and single-day shoots. All equipment is thoroughly tested and ready to use.</p>
+                    <ul class="rental-features">
+                        <li>Same-day pickup available</li>
+                        <li>Professional setup assistance</li>
+                        <li>24/7 emergency support</li>
+                        <li>Comprehensive insurance included</li>
+                    </ul>
+                </div>
+
+                <div class="rental-option fade-in-up delay-1">
+                    <div class="rental-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 21V8.5L16 5.5L20 3V10.5L12 13.5L4 10.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Weekly Rentals</h3>
+                    <p>Ideal for week-long productions and projects requiring multiple shooting days with setup flexibility.</p>
+                    <ul class="rental-features">
+                        <li>20% discount on daily rates</li>
+                        <li>Priority availability</li>
+                        <li>Flexible pickup/return times</li>
+                        <li>Extended support hours</li>
+                    </ul>
+                </div>
+
+                <div class="rental-option fade-in-up delay-2">
+                    <div class="rental-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L3.5 7L12 12L20.5 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L3.5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12L20.5 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Monthly Rentals</h3>
+                    <p>Best value for long-term productions, documentaries, or extended project requirements.</p>
+                    <ul class="rental-features">
+                        <li>40% discount on daily rates</li>
+                        <li>Dedicated equipment management</li>
+                        <li>On-site technical support</li>
+                        <li>Custom package deals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Support -->
+    <section class="tech-support">
+        <div class="container">
+            <div class="support-content">
+                <div class="support-text fade-in-up">
+                    <h2>Expert Technical Support</h2>
+                    <p>Our team of certified technicians provides comprehensive support to ensure your equipment performs flawlessly on set.</p>
+                    <div class="support-features">
+                        <div class="support-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Certified Technicians</span>
+                        </div>
+                        <div class="support-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 12L2 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 4L2 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 20L2 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>24/7 Emergency Support</span>
+                        </div>
+                        <div class="support-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 16.6725 2.99817 15.95 2.99817C15.2275 2.99817 14.5121 3.14052 13.8446 3.41708C13.1772 3.69364 12.5708 4.099 12.06 4.61L11 5.67L9.94 4.61C8.9083 3.57829 7.50903 2.99864 6.05 2.99864C4.59096 2.99864 3.19169 3.57829 2.16 4.61C1.1283 5.64169 0.54864 7.04097 0.54864 8.5C0.54864 9.95903 1.1283 11.3583 2.16 12.39L3.22 13.45L11 21.23L18.78 13.45L19.84 12.39C20.351 11.8792 20.7564 11.2728 21.0329 10.6054C21.3095 9.93789 21.4518 9.22248 21.4518 8.5C21.4518 7.77752 21.3095 7.06211 21.0329 6.39464C20.7564 5.72718 20.351 5.12084 19.84 4.61V4.61Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Equipment Training</span>
+                        </div>
+                        <div class="support-feature">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Technical Documentation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="support-contact fade-in-up delay-1">
+                    <h3>Need Technical Support?</h3>
+                    <p>Our technicians are available to help with any equipment questions or technical issues:</p>
+                    <div class="support-contacts">
+                        <div class="contact-item">
+                            <strong>Phone:</strong> +1 (555) 123-TECH
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong> tech@myfilmproduction.com
+                        </div>
+                        <div class="contact-item">
+                            <strong>Hours:</strong> 24/7 Emergency Support
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Rent or Buy?</h2>
+                <p class="cta-subtitle">Contact us today to discuss your camera equipment needs and get a custom quote</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    <a href="tel:+15551234567" class="btn btn-secondary">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>MyFilm<span>Production</span></h3>
+                    </div>
+                    <p>Creating cinematic experiences through professional film production and post-production services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Shop Categories</h4>
+                    <ul>
+                        <li><a href="shop-1.html">Camera Equipment</a></li>
+                        <li><a href="shop-2.html">Lighting Equipment</a></li>
+                        <li><a href="shop-3.html">Audio Equipment</a></li>
+                        <li><a href="contact.html">Rental Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services-1.html">Film Production</a></li>
+                        <li><a href="services-2.html">Post-Production</a></li>
+                        <li><a href="projects-1.html">Commercial Work</a></li>
+                        <li><a href="projects-2.html">Short Films</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📧 info@myfilmproduction.com</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>📍 123 Film Street, Los Angeles, CA</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MyFilmProduction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js\js\main.js"></script>
+    <script src="js\js\animations.js"></script>
+    <script>
+        // Shop filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterSelects = document.querySelectorAll('.filter-select');
+            const productCards = document.querySelectorAll('.product-card');
+            
+            filterSelects.forEach(select => {
+                select.addEventListener('change', function() {
+                    filterProducts();
+                });
+            });
+            
+            function filterProducts() {
+                const category = document.getElementById('category').value;
+                const price = document.getElementById('price').value;
+                const brand = document.getElementById('brand').value;
+                
+                productCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    const cardPrice = card.getAttribute('data-price');
+                    const cardBrand = card.getAttribute('data-brand');
+                    
+                    const categoryMatch = category === 'all' || cardCategory === category;
+                    const priceMatch = price === 'all' || cardPrice === price;
+                    const brandMatch = brand === 'all' || cardBrand === brand;
+                    
+                    if (categoryMatch && priceMatch && brandMatch) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

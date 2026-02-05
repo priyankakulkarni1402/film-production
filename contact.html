@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MyFilmProduction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles\styles\main.css"> 
+    <link rel="stylesheet" href="styles\styles\animations.css"> 
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MyFilm<span>Production</span></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Main Home</a>
+                        <a href="home-alt.html">Cinematic Home</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Services</a>
+                    <div class="dropdown-content">
+                        <a href="services-1.html">Film Production</a>
+                        <a href="services-2.html">Post-Production</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="projects-1.html">Commercial Work</a>
+                        <a href="projects-2.html">Short Films</a>
+                        <a href="projects-3.html">Documentaries</a>
+                        <a href="projects-4.html">Music Videos</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Shop</a>
+                    <div class="dropdown-content">
+                        <a href="shop-1.html">Cameras</a>
+                        <a href="shop-2.html">Lighting</a>
+                        <a href="shop-3.html">Audio Equipment</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="team.html" class="nav-link">Team</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="page-title">Let's Create Something Amazing</h1>
+                <p class="page-subtitle">Ready to bring your vision to life? Get in touch with our team to discuss your project and discover how we can help you achieve your goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section" data-animate="slideInLeft">
+                    <h2>Send us a message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="firstName" name="firstName" class="form-input" placeholder=" " required>
+                                <label for="firstName" class="form-label">First Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="lastName" name="lastName" class="form-input" placeholder=" " required>
+                                <label for="lastName" class="form-label">Last Name</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                                <label for="email" class="form-label">Email Address</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder=" ">
+                                <label for="phone" class="form-label">Phone Number</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" class="form-input" placeholder=" ">
+                            <label for="company" class="form-label">Company (Optional)</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="service" name="service" class="form-input" required>
+                                <option value="">Select a Service</option>
+                                <option value="film-production">Film Production</option>
+                                <option value="post-production">Post-Production</option>
+                                <option value="commercial">Commercial Work</option>
+                                <option value="documentary">Documentary</option>
+                                <option value="music-video">Music Video</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="service" class="form-label">Service Interest</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-input" rows="5" placeholder=" " required></textarea>
+                            <label for="message" class="form-label">Project Details</label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for industry insights and updates
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section" data-animate="slideInRight">
+                    <h2>Get in touch</h2>
+                    
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h3>Phone</h3>
+                                <p>8999664960</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="91f8fff7fed1fce8f7f8fdfce1e3fef5e4f2e5f8feffbff2fefc">[email&#160;protected]</a></p>
+                                <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ffffde0e5eaecfbfccfe2f6e9e6e3e2fffde0ebfaecfbe6e0e1a1ece0e2">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h3>Address</h3>
+                                <p>kothrud<br><br>Pune</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h3>Business Hours</h3>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                <p>Saturday: 10:00 AM - 4:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.8449490145925!2d-118.34276688478393!3d34.10131798061198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf3d5f5f0f3b%3A0x1a9c5b8c5b8c5b8c!2s123%20Film%20St%2C%20Hollywood%2C%20CA%2090028!5e0!3m2!1sen!2sus!4v1635959380000!5m2!1sen!2sus"
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title" data-animate="fadeIn">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item" data-animate="slideInLeft">
+                    <div class="faq-question">
+                        <h3>What services do you offer?</h3>
+                        <div class="faq-toggle">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer comprehensive film production services including pre-production planning, principal photography, post-production editing, color grading, sound design, and final delivery. We also provide equipment rental and consultation services.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate="slideInRight">
+                    <div class="faq-question">
+                        <h3>How long does a typical project take?</h3>
+                        <div class="faq-toggle">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on scope and complexity. A simple commercial might take 2-3 weeks, while a complex documentary could take 2-3 months. We provide detailed timelines during our initial consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate="slideInLeft">
+                    <div class="faq-question">
+                        <h3>Do you work with businesses of all sizes?</h3>
+                        <div class="faq-toggle">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We work with startups, small businesses, and large corporations. Our team adapts to your needs and budget to deliver quality content that achieves your goals.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate="slideInRight">
+                    <div class="faq-question">
+                        <h3>What's included in your production packages?</h3>
+                        <div class="faq-toggle">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our packages typically include pre-production planning, professional crew, equipment rental, shooting, basic editing, color correction, and final delivery. Custom packages are available based on your specific needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's discuss your vision and create something extraordinary together</p>
+                <div class="cta-buttons">
+                    <a href="tel:+15551234567" class="btn btn-primary">Call Now</a>
+                    <a href="/cdn-cgi/l/email-protection#c3aaada5ac83aebaa5aaafaeb3b1aca7b6a0b7aaacadeda0acae" class="btn btn-outline">Email Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MyFilm<span>Production</span></h3>
+                    <p>Creating cinematic excellence through professional film production services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-2.08 0-3.75-1.671-3.75-3.75s1.671-3.75 3.75-3.75 3.75 1.671 3.75 3.75-1.67 3.75-3.75 3.75zm7.121-5.749c-1.287 0-2.32 1.033-2.32 2.32s1.033 2.32 2.32 2.32 2.32-1.033 2.32-2.32-1.033-2.32-2.32-2.32z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services-1.html">Film Production</a></li>
+                        <li><a href="services-2.html">Post-Production</a></li>
+                        <li><a href="shop-1.html">Equipment Rental</a></li>
+                        <li><a href="contact.html">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="projects-1.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7b12151d143b16021d1217160b09141f0e180f12141555181416">[email&#160;protected]</a></p>
+                    <p>📞 8999664960</p>
+                    <p>📍 Pune</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MyFilmProduction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js"></script>
+    <script src="js\js\animations.js"></script>
+
+    <style>
+        .contact-hero {
+            padding: 120px 0 var(--space-xxxl);
+            background: linear-gradient(135deg, var(--bg-page) 0%, #1a1d2e 100%);
+            text-align: center;
+        }
+        
+        .contact-main {
+            padding: var(--space-xxxl) 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xxxl);
+        }
+        
+        .contact-form-section h2 {
+            margin-bottom: var(--space-lg);
+        }
+        
+        .contact-form {
+            background: var(--bg-surface);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            border: 1px solid var(--border-subtle);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-md);
+        }
+        
+        .form-group {
+            position: relative;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 16px;
+            background: var(--bg-page);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--border-focus);
+            box-shadow: var(--glow-md);
+            transform: translateY(-2px);
+        }
+        
+        .form-label {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            color: var(--text-secondary);
+            font-size: 16px;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            background: var(--bg-surface);
+            padding: 0 4px;
+        }
+        
+        .form-input:focus + .form-label,
+        .form-input:not(:placeholder-shown) + .form-label {
+            top: -8px;
+            left: 12px;
+            font-size: 12px;
+            color: var(--primary-500);
+        }
+        
+        textarea.form-input {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            cursor: pointer;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        
+        .checkbox-label input[type="checkbox"] {
+            display: none;
+        }
+        
+        .checkmark {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--border-subtle);
+            border-radius: 4px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .checkbox-label input[type="checkbox"]:checked + .checkmark {
+            background: var(--primary-500);
+            border-color: var(--primary-500);
+        }
+        
+        .checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .btn-full {
+            width: 100%;
+            margin-top: var(--space-md);
+        }
+        
+        .contact-info-section h2 {
+            margin-bottom: var(--space-lg);
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            background: var(--bg-surface);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            border: 1px solid var(--border-subtle);
+            transition: all 0.3s ease;
+        }
+        
+        .info-item:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary-500);
+        }
+        
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-500), var(--accent-500));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .info-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .info-content h3 {
+            margin-bottom: var(--space-xs);
+            color: var(--text-primary);
+        }
+        
+        .info-content p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        
+        .map-section {
+            height: 400px;
+            overflow: hidden;
+        }
+        
+        .map-container {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .faq-section {
+            padding: var(--space-xxxl) 0;
+            background: var(--bg-surface);
+        }
+        
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--bg-page);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-md);
+            border: 1px solid var(--border-subtle);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-lg);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: var(--border-subtle);
+        }
+        
+        .faq-question h3 {
+            margin: 0;
+            color: var(--text-primary);
+        }
+        
+        .faq-toggle {
+            width: 20px;
+            height: 20px;
+            position: relative;
+        }
+        
+        .faq-toggle span {
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background: var(--primary-500);
+            transition: all 0.3s ease;
+        }
+        
+        .faq-toggle span:first-child {
+            transform: rotate(90deg);
+        }
+        
+        .faq-item.active .faq-toggle span:first-child {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+        
+        .faq-answer p {
+            padding: 0 var(--space-lg) var(--space-lg);
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .page-title {
+                font-size: 40px;
+            }
+        }
+    </style>
+
+    <script>
+        // FAQ Toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', function() {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all other FAQ items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    if (isActive) {
+                        item.classList.remove('active');
+                    } else {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

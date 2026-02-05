@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentaries Portfolio - MyFilmProduction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles\styles\main.css">
+    <link rel="stylesheet" href="styles\styles\animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MyFilm<span>Production</span></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Main Home</a>
+                        <a href="home-alt.html">Cinematic Home</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Services</a>
+                    <div class="dropdown-content">
+                        <a href="services-1.html">Film Production</a>
+                        <a href="services-2.html">Post-Production</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="projects-1.html">Commercial Work</a>
+                        <a href="projects-2.html">Short Films</a>
+                        <a href="projects-3.html" class="active">Documentaries</a>
+                        <a href="projects-4.html">Music Videos</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Shop</a>
+                    <div class="dropdown-content">
+                        <a href="shop-1.html">Cameras</a>
+                        <a href="shop-2.html">Lighting</a>
+                        <a href="shop-3.html">Audio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="team.html" class="nav-link">Team</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in-up">Documentary Films</h1>
+                <p class="hero-subtitle fade-in-up delay-1">Uncovering truth, sharing authentic stories, and documenting real-world experiences with journalistic integrity</p>
+                <div class="hero-stats fade-in-up delay-2">
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Documentary Films</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Documentary Awards</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500K+</span>
+                        <span class="stat-label">Viewers Reached</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Documentaries</button>
+                <button class="filter-btn" data-filter="social">Social Issues</button>
+                <button class="filter-btn" data-filter="environment">Environment</button>
+                <button class="filter-btn" data-filter="culture">Culture</button>
+                <button class="filter-btn" data-filter="biography">Biography</button>
+                <button class="filter-btn" data-filter="history">History</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+                
+                <div class="project-card social fade-in-up" data-category="social">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-1.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Invisible Heroes</h3>
+                        <p class="project-description">An intimate look at essential workers during the pandemic, showing their daily struggles and heroic contributions to society</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Social Issues</span>
+                            <span class="project-duration">45 min</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Documentary - Social Impact Film Festival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card environment fade-in-up delay-1" data-category="environment">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-2.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Ocean's Call</h3>
+                        <p class="project-description">Exploring the devastating effects of plastic pollution on marine life and the communities working to restore ocean health</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Environment</span>
+                            <span class="project-duration">60 min</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Environmental - Sundance Film Festival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card culture fade-in-up delay-2" data-category="culture">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-1.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Rhythms of Heritage</h3>
+                        <p class="project-description">Following three generations of a traditional music family as they preserve and adapt ancient songs for modern audiences</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Culture</span>
+                            <span class="project-duration">50 min</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Cultural Documentary - Tribeca Film Festival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card biography fade-in-up delay-3" data-category="biography">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-2.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">The Artist's Journey</h3>
+                        <p class="project-description">A compelling biography of a renowned painter who overcame addiction and personal tragedy to create lasting artistic legacy</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Biography</span>
+                            <span class="project-duration">75 min</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Biography - Palm Springs International Film Festival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card social fade-in-up delay-4" data-category="social">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-1.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Voices from the Margins</h3>
+                        <p class="project-description">Shining light on the experiences of homeless individuals in urban America, exploring root causes and potential solutions</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Social Issues</span>
+                            <span class="project-duration">40 min</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Audience Choice - Social Documentary Festival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card history fade-in-up delay-5" data-category="history">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-2.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Letters from the Past</h3>
+                        <p class="project-description">Uncovering family secrets through discovered letters from WWII, revealing stories of courage, loss, and resilience</p>
+                        <div class="project-meta">
+                            <span class="project-genre">History</span>
+                            <span class="project-duration">55 min</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Historical Documentary - LA Film Festival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card environment fade-in-up delay-6" data-category="environment">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-1.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Climate Warriors</h3>
+                        <p class="project-description">Following young activists fighting against climate change, documenting their strategies and personal sacrifices</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Environment</span>
+                            <span class="project-duration">65 min</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Environmental - Environmental Film Festival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card culture fade-in-up delay-7" data-category="culture">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-2.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Digital Natives</h3>
+                        <p class="project-description">Exploring the impact of technology on indigenous communities and their efforts to preserve traditional knowledge</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Culture</span>
+                            <span class="project-duration">48 min</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Cultural - Toronto International Film Festival</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card biography fade-in-up delay-8" data-category="biography">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="project-detail-1.html" class="btn btn-primary">View Details</a>
+                                <button class="btn btn-secondary">Watch Trailer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">The Healer's Story</h3>
+                        <p class="project-description">Following a rural doctor who serves underserved communities for over 40 years, showing dedication and medical innovation</p>
+                        <div class="project-meta">
+                            <span class="project-genre">Biography</span>
+                            <span class="project-duration">52 min</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <div class="project-awards">
+                            <span class="award-badge">🏆 Best Medical Documentary - Documentary Festival of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentary Approach Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Documentary Approach</h2>
+                <p class="section-subtitle">A collaborative and ethical methodology for creating impactful documentary content</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step fade-in-up">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Research & Development</h3>
+                        <p>Extensive research, fact-checking, and developing relationships with subjects while maintaining ethical standards</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in-up delay-1">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Subject Engagement</h3>
+                        <p>Building trust and rapport with documentary subjects, ensuring comfort and authentic representation</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in-up delay-2">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Cinematography</h3>
+                        <p>Observational filming that captures real moments while maintaining minimal intrusion into subjects' lives</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in-up delay-3">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Interview Process</h3>
+                        <p>Thoughtful interview techniques that allow subjects to share their stories authentically and comfortably</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in-up delay-4">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Editorial Process</h3>
+                        <p>Careful editing that maintains narrative integrity while ensuring accuracy and respect for subjects</p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in-up delay-5">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3>Impact & Outreach</h3>
+                        <p>Strategic distribution and outreach campaigns to maximize the documentary's social impact and reach</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentary Types Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Documentary Types We Produce</h2>
+                <p class="section-subtitle">Specialized expertise in diverse documentary formats and storytelling approaches</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card primary fade-in-up">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Investigative Documentary</h3>
+                    <p>Exposing truth through thorough research, fact-checking, and uncovering hidden information about important issues</p>
+                </div>
+
+                <div class="service-card accent fade-in-up delay-1">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L3.09 8.26L4.11 20.01H19.89L20.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Biographical Documentary</h3>
+                    <p>Chronicling the lives and legacies of remarkable individuals, exploring their personal and professional journeys</p>
+                </div>
+
+                <div class="service-card secondary fade-in-up delay-2">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.4 15A1.65 1.65 0 0 0 20.42 12.98A1.65 1.65 0 0 0 20.75 9A1.65 1.65 0 0 0 19.41 6.34A1.65 1.65 0 0 0 17.94 7.04A1.65 1.65 0 0 0 16.25 7.67A1.65 1.65 0 0 0 17.12 9.81A1.65 1.65 0 0 0 15.67 9.42A1.65 1.65 0 0 0 13.92 8.56A1.65 1.65 0 0 0 11.67 10.92A1.65 1.65 0 0 0 11.93 12.71A1.65 1.65 0 0 0 12 14.25A1.65 1.65 0 0 0 13.39 16.26A1.65 1.65 0 0 0 15.67 17.7A1.65 1.65 0 0 0 16.76 17.9A1.65 1.65 0 0 0 18 19.08A1.65 1.65 0 0 0 19.4 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Social Documentary</h3>
+                    <p>Addressing pressing social issues, advocating for change, and bringing attention to marginalized communities and causes</p>
+                </div>
+
+                <div class="service-card accent fade-in-up delay-3">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Historical Documentary</h3>
+                    <p>Exploring past events, uncovering forgotten stories, and connecting historical lessons to contemporary issues</p>
+                </div>
+
+                <div class="service-card primary fade-in-up delay-4">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6C10.8954 6 10 5.10457 10 4C10 2.89543 10.8954 2 12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 10C5.10457 10 6 10.8954 6 12C6 13.1046 5.10457 14 4 14C2.89543 14 2 13.1046 2 12C2 10.8954 2.89543 10 4 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 10C21.1046 10 22 10.8954 22 12C22 13.1046 21.1046 14 20 14C18.8954 14 18 13.1046 18 12C18 10.8954 18.8954 10 20 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 17C8.10457 17 9 17.8954 9 19C9 20.1046 8.10457 21 7 21C5.89543 21 5 20.1046 5 19C5 17.8954 5.89543 17 7 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 17C18.1046 17 19 17.8954 19 19C19 20.1046 18.1046 21 17 21C15.8954 21 15 20.1046 15 19C15 17.8954 15.8954 17 17 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Nature & Environment</h3>
+                    <p>Documenting natural phenomena, environmental challenges, and wildlife conservation efforts around the world</p>
+                </div>
+
+                <div class="service-card secondary fade-in-up delay-5">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 20V4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 20V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Arts & Culture</h3>
+                    <p>Exploring artistic movements, cultural traditions, and the creative processes of artists and cultural practitioners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Documentary Impact</h2>
+                <p class="section-subtitle">Measuring the reach and influence of our documentary work</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card fade-in-up">
+                    <div class="stat-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 3C15 5.76142 12.7614 8 10 8C7.23858 8 5 5.76142 5 3C5 5.76142 2.76142 8 0 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number">500K+</div>
+                    <div class="stat-label">Viewers Reached</div>
+                </div>
+                
+                <div class="stat-card fade-in-up delay-1">
+                    <div class="stat-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 21V8.5L16 5.5L20 3V10.5L12 13.5L4 10.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Documentary Awards</div>
+                </div>
+                
+                <div class="stat-card fade-in-up delay-2">
+                    <div class="stat-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Documentaries Made</div>
+                </div>
+                
+                <div class="stat-card fade-in-up delay-3">
+                    <div class="stat-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 16.6725 2.99817 15.95 2.99817C15.2275 2.99817 14.5121 3.14052 13.8446 3.41708C13.1772 3.69364 12.5708 4.099 12.06 4.61L11 5.67L9.94 4.61C8.9083 3.57829 7.50903 2.99864 6.05 2.99864C4.59096 2.99864 3.19169 3.57829 2.16 4.61C1.1283 5.64169 0.54864 7.04097 0.54864 8.5C0.54864 9.95903 1.1283 11.3583 2.16 12.39L3.22 13.45L11 21.23L18.78 13.45L19.84 12.39C20.351 11.8792 20.7564 11.2728 21.0329 10.6054C21.3095 9.93789 21.4518 9.22248 21.4518 8.5C21.4518 7.77752 21.3095 7.06211 21.0329 6.39464C20.7564 5.72718 20.351 5.12084 19.84 4.61V4.61Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number">4.9/5</div>
+                    <div class="stat-label">Audience Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Tell Your Story?</h2>
+                <p class="cta-subtitle">Let's collaborate to create a documentary that makes a difference and reaches the right audience</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Start Your Documentary</a>
+                    <a href="services-1.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>MyFilm<span>Production</span></h3>
+                    </div>
+                    <p>Creating cinematic experiences through professional film production and post-production services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services-1.html">Film Production</a></li>
+                        <li><a href="services-2.html">Post-Production</a></li>
+                        <li><a href="projects-1.html">Commercial Work</a></li>
+                        <li><a href="projects-2.html">Short Films</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📧 info@myfilmproduction.com</p>
+                        <p>📞 +1 (555) 123-4567</p>
+                        <p>📍 123 Film Street, Los Angeles, CA</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MyFilmProduction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js\js\main.js"></script>
+    <script src="js\js\animations.js"></script>
+    <script>
+        // Project filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter projects
+                    projectCards.forEach(card => {
+                        if (filter === 'all' || card.classList.contains(filter)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
